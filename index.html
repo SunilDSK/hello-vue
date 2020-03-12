@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello-Vue</title>
-  </head>
-  <body>    
+</head>
+
+<body>
     <div id="app">
-        <p>The second dog is {{dogs[1]}}</p>
-        <p>All the dogs are {{ dogs}}</p>
+        <!-- 
+            If the value of a v-if directive evaluates to falsy, 2 the element isn’t output to the DOM. 
+        -->
+        <div v-if="true">one with if=true</div>
+        <div v-if="false">two with if=false</div>
+        <!-- 
+            v-show, uses CSS to show and hide the element. Making style="display: none"
+         -->
+        <div v-show="true">one with show=true</div>
+        <div v-show="false">two with show=false</div>
+        
+        <!-- 
+            Vue tries to show user.name as v-show is user.
+            If v-if was used Vue will not render the p HTML element
+         -->
+        <div v-show="user">
+            <p>User name: {{ user.name }}</p>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
