@@ -1,7 +1,6 @@
-var hours = new Date().getHours();
 new Vue({
-  el: "#app",
-  data: {
-      hours: new Date().getHours()
-  }
+    el: "#app",
+    data: {
+        path: location.pathname
+    }
 });
