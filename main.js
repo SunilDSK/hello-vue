@@ -1,6 +1,9 @@
+var hours = new Date().getHours();
 new Vue({
   el: "#app",
   data: {
-    title: "Hello Vue.js"
+      isMorning: hours < 12,
+      isAfternoon: hours >= 12 && hours <= 18,
+      isEvening: hours >18
   }
 });
