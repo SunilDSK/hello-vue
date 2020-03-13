@@ -10,7 +10,19 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="dog in dogs">{{dog}}</li>
+            <!-- 
+                The order of the arguments is (value, key).
+                Same goes for arrays where key is index and value is value at that index
+             -->
+            <li v-for="(rent, city) in averageRent">
+                The average rent in {{ city }} is ${{rent}}
+            </li>
+            <!-- 
+                Can pass a number to print numbers from 0 to the given number
+             -->
+            <ul>
+                <li v-for="n in 10">{{ n }}</li>
+            </ul>
         </ul>
     </div>
 

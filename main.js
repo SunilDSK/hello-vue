@@ -1,6 +1,10 @@
 new Vue({
   el: "#app",
   data: {
-      dogs: ['Rex', 'Rover', 'Henrietta', 'Alan']
+    averageRent: {
+      london: 1650,
+      paris: 1730,
+      NYC: 3680
+    }
   }
 });
