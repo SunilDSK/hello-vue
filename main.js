@@ -1,11 +1,12 @@
 var vue = new Vue({
   el: "#app",
   data: {
-    second: 0
-  },
-  created() {
-    setInterval(() => {
-      this.second++;
-    }, 1000)
+    formData: {
+      username: 'someuser'
+    }
   }
 });
+
+vue.formData = Object.assign({}, vue.formData, {
+  name: 'newusername'
+})
