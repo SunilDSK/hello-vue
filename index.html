@@ -9,21 +9,9 @@
 
 <body>
     <div id="app">
-        <ul>
-            <!-- 
-                The order of the arguments is (value, key).
-                Same goes for arrays where key is index and value is value at that index
-             -->
-            <li v-for="(rent, city) in averageRent">
-                The average rent in {{ city }} is ${{rent}}
-            </li>
-            <!-- 
-                Can pass a number to print numbers from 0 to the given number
-             -->
-            <ul>
-                <li v-for="n in 10">{{ n }}</li>
-            </ul>
-        </ul>
+        <button v-bind:type="buttonType" >Test button</button>
+        <button :disabled="buttonDisabled">Disabled button</button>
+        <button disabled>Button disabled</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
