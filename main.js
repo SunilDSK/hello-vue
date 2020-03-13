@@ -1,6 +1,6 @@
 new Vue({
   el: "#app",
   data: {
-      user: undefined
+      dogs: ['Rex', 'Rover', 'Henrietta', 'Alan']
   }
 });
