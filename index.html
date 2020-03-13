@@ -9,8 +9,9 @@
 
 <body>
     <div id="app">
-        <p>formData.username= {{ formData.username }} is added while object initialization.</p>
-        <p>formData.name= {{ formData.name }} is added using Object.assign()</p>
+        <ul>
+            <li v-for='dog in dogs'> {{ dog }}</li>
+        </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
