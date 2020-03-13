@@ -1,7 +1,11 @@
 var vue = new Vue({
   el: "#app",
   data: {
-    buttonType: "submit",
-    buttonDisabled: false
+    second: 0
+  },
+  created() {
+    setInterval(() => {
+      this.second++;
+    }, 1000)
   }
 });
