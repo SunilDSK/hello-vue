@@ -2,11 +2,9 @@ var vue = new Vue({
   el: "#app",
   data: {
     formData: {
-      username: 'someuser'
+      username: '{someuser}'
     }
   }
 });
 
-vue.formData = Object.assign({}, vue.formData, {
-  name: 'newusername'
-})
+Vue.set(vue.formData, 'name', '{Some User}');
